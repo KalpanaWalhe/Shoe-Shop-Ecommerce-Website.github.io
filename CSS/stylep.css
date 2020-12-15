@@ -1,0 +1,445 @@
+
+@import url(./font.css);
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+font-family: 'Poppins', sans-serif;
+background-size: cover;
+color: black;
+}
+
+
+/*-------------------------------Nav--------------------------*/
+
+.navbar{
+    display:flex;
+    align-items:center;
+    padding:20px;
+    width: 104%;
+    z-index: 1000;
+    background-color: white;
+    margin: 0;
+    box-shadow: 0px 1px 10px #999;
+}
+
+.nav{
+    flex:1;
+    text-align: right;
+    width: 100%;
+}
+
+.nav ul{
+    display:inline-block;
+    list-style-type:none;
+}
+
+.nav ul li{
+    display: inline-flex;
+    margin-right: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: #555;
+}
+
+.nav a:hover{
+    color: #FF1493;
+}
+
+p{
+    color: #555;
+}
+
+.logo h2{
+    color: #FF1493;
+}
+
+.logo u{
+    color: white;
+}
+.container{
+    max-width: 1400px;
+    margin: 0;
+}
+
+.row-2 .col-7{
+  background: #fff;
+  transition: transform 0.5s;
+  box-shadow: 0px 1px 10px #999;
+  margin-top: 2%;
+}
+
+.row
+{
+    display: flex;
+    align-items: center;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+.table-responsive{
+    margin: 7% 0;
+}
+
+.col-1{
+    flex-basis: 33%;
+    padding:10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+
+.col-1 img{
+    width:100%;
+    margin-top: 15%;
+    height: 50%;
+    position: relative;
+}
+
+.col-1 p{
+    font-size: 14px;
+}
+
+table
+{
+    border-collapse: collapse;
+    width: 100%;
+   
+}
+  
+th 
+{
+    height: 60px;
+    text-align: left;
+}
+
+td  
+{
+    text-align: left;
+    height: 50px;
+    vertical-align: bottom;
+}
+th, td {
+    padding: 15px 5px;
+    text-align: left;
+  }
+
+.table th, td 
+{
+    border: 1px solid black;
+}
+
+.table tr,td{
+    align-items: center;
+} 
+
+.table .text-danger{
+    color: red;
+}
+
+.table-responsive th{
+   
+    color: #FF1493;
+}
+
+.row
+{
+     display: flex;
+     align-items: center;
+     flex-wrap:wrap;
+     justify-content: space-between;
+}
+
+
+.header .row{
+    margin-top: 60px;
+}
+
+
+/*----------------------------------------------------Footer-----------------------------------------*/
+
+.small-container{
+    max-width: 200px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px; 
+  
+}
+
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+    min-width: 250px;
+    margin: 20px;
+}
+
+.footer-col-3, .footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+}
+
+body .container1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #131313;
+}
+
+.container1{
+    position: relative;
+}
+
+.container1 .card{
+    position: relative;
+    width: 320px;
+    height: 450px;
+    background: #232323;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.footer{
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px  0 20px;
+}
+
+.footer p{
+    color: #8a8a8a;
+
+}
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+  min-width: 250px;
+  margin: 20px;
+}
+
+.footer-col-1{
+    flex-basis: 30%;
+}
+
+.footer-col-2{
+    flex: 1;
+    text-align: center;
+}
+.footer-col-1 h3{
+    width:180px;
+    margin-bottom: 20px;
+}
+
+.footer-col-3, .footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+
+
+.app-logo{
+    margin-top: 20px;
+}
+
+.app-logo img{
+    width: 140px;
+}
+
+.footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+
+.copyright{
+    text-align: center;
+    color: white;
+}
+
+.copyright a{
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+/*------------------media query for menu ----------------------------*/
+
+@media all and (max-width: 968px){
+    nav ul{
+        margin-right: 0px;
+        float: left;
+    }
+    nav .logo{
+        padding-left: 30px;
+        width: 100%;
+    }
+    nav ul li, nav ul ul li{
+        display: block;
+        width: 100%;
+    }
+    nav ul ul{
+        top: 70px;
+        position: static;
+        float: none;
+        display: none;
+        opacity: 1;
+        visibility: visible;
+        border-top: none;
+        box-shadow: none;
+    }
+    
+    nav ul ul ul li{
+        position: static;
+
+    }
+    
+    nav ul ul li{
+       border-bottom: 0px;   
+    }
+
+    nav ul ul a{
+        padding-left: 40px;
+    }
+
+    nav ul ul ul a {
+        padding-left: 80px;
+      
+    }
+    
+  
+
+    .show{
+        display: block;
+        color: black;
+        font-size: 18px;
+        padding: 0 15px;
+        line-height: 70px;
+        cursor: pointer;
+    }
+    .show:hover{
+        color: #FF1493;
+    }
+    nav ul a:hover{
+        box-shadow: none;
+    }
+    .icon{
+        display: block;
+        color: black;
+        position: absolute;
+        right: 20px;
+        line-height: 70px;
+        font-size: 25px;
+        cursor: pointer;
+        color: gray;
+    }
+    nav ul li a:hover{
+        box-shadow: none;
+    }
+
+    .show + a, nav ul{
+       display: none;
+    }
+
+    [id^=btn]:checked + ul{
+        display: block;
+    }
+    .fa-search{
+        Position:right top;
+        visibility: visible;
+    }
+    
+}
+
+
+/*------------------media query for menu less than 600 screen size ----------------------------*/
+
+@media only screen and (max-width :800px)
+{
+    .row
+    { 
+        text-align :   center;
+    }
+    .col-2, .col-3, .col-4, .col-7, .brands
+    {
+        flex-basis:100%;  
+    } 
+    .foter-col-3{
+        flex-wrap: 50%;
+        margin: 2rem;
+    }
+    .foter-col-2{
+        flex-basis: 100%;
+        text-align: center;
+        margin-top: 1rem ;
+    }
+    .foter-col-2 .logo{
+        flex-basis: 100%;
+        text-align: center;
+        margin-top: 1rem ;
+    }
+    .foter-col-1{
+        flex-basis: 100%;
+        text-align: center;
+        margin-left: .7rem;
+    }
+    .slideshow-container{
+        flex-basis: 100%;
+        margin-top:2.2rem ;
+    }
+    .copyright{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width :800px){
+    .nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.7s;
+    }
+
+    .nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .nav ul li a{
+        color: #fff;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+  
+
+}
+

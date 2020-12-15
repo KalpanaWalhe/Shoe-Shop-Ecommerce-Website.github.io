@@ -1,0 +1,165 @@
+@import url(./font.css);
+
+
+
+body{
+font-family: 'Poppins', sans-serif;
+background-size: cover;
+color: black;
+text-decoration: none;
+}
+
+div {
+    display: block;
+}
+
+.col3 .row1 .col1 img{
+    width: 54%;
+    padding: 1rem 2rem 1rem 4rem;
+    
+}
+
+.col3 .row2 .col1{
+    background: #fff;
+    box-shadow: 0px 1px 10px #999;
+    width: 55%;
+    margin-left: 3rem;
+    padding: 2rem 1rem;
+    position: relative;
+    
+}
+
+.row{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.col3{
+    flex: 1 1 4em; 
+}
+
+.col4{
+    flex: 2 2 20em;
+}
+
+
+
+.col1 .line{
+    padding-bottom: 15px; 
+    border-bottom-style: groove; 
+    border-bottom-width: 3.1px; 
+    width: fit-content;
+    width: 12rem;
+}
+
+.row2 .col1 i{
+    padding: 0 1rem 0 0;
+    color:#FF1493;
+    
+}
+
+.row2 .col1 h3{
+    position: relative;
+    font-size: 17px;
+    color: gray;
+}
+
+.row2 h3:hover{
+    position: relative;
+    color:#FF1493;
+}
+
+.row .col4 .row1 .col2{
+    background: #fff;
+    box-shadow: 0px 1px 10px #999;
+    width: 95%;
+    padding: 2rem 1rem;
+    position: relative;
+   
+}
+
+.row .col4 .row1 .col2 label{
+    color:#FF1493;
+   
+}
+
+.row .col4 .row1 .col2 .col-1{
+    padding-left: 5rem;
+}
+
+/*-------*/
+input[type=text] {
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-right: 16rem;
+  }
+
+input[type=password] {
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-right: 16rem;
+  }
+
+input[type=submit] {
+    background-color:#FF1493; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+
+  .reveal-if-active {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+input[type="radio"]:checked ~ .reveal-if-active,
+input[type="checkbox"]:checked ~ .reveal-if-active {
+  opacity: 1;
+  max-height: 100px; /* little bit of a magic number :( */
+  overflow: visible;
+}
+  .reveal1 {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+input[type="radio"]:checked ~ .reveal1,
+input[type="checkbox"]:checked ~ .reveal1 {
+  opacity: 1;
+  max-height: 100px; /* little bit of a magic number :( */
+  overflow: visible;
+}
+  .reveal2 {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+input[type="radio"]:checked ~ .reveal2,
+input[type="checkbox"]:checked ~ .reveal2 {
+  opacity: 1;
+  max-height: 100px; /* little bit of a magic number :( */
+  overflow: visible;
+}
+
+
+

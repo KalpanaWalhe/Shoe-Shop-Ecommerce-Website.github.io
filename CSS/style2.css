@@ -1,0 +1,174 @@
+@import url(./font.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    text-decoration: none;
+}
+
+.inner{
+    height: 75%;
+    width: 70%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 10px 10px 68px -6px rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: space-between;
+}
+
+.photo{
+    width: 50%;
+    height: 100%;
+    padding: 0 50px;
+}
+
+.photo img{
+    width:100%;
+    height:100%;
+}
+
+.user-form{
+    padding: 5px;
+    width:50%;
+    height: 100%;
+    border-radius:0px 10px 10px 0px;
+
+}
+
+.user-form h1{
+    color: #2F4353;
+    padding:30px 0;
+    font-weight: 700;
+    font-family:  Viga;
+    text-align: center;
+}
+
+.user-form i{
+    position:absolute;
+    margin: 25px 10px;
+    color:#2F4353;
+}
+
+input{
+    width: 100%;
+    border-radius: 30px;
+    border: none;
+    height: 2.4rem;
+    font-size: 15px;
+    margin: 10px 0;
+    padding: 0 30px;
+    outline: none;
+    font-family: viga;
+   
+}
+.safety{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 10px;
+    padding: 0 5px;
+}
+.line{
+    height: 6px;
+    border-radius: 20px;
+    width: 20%;
+    background: #fff;
+    margin: 5px;
+}
+
+
+.action-btn{
+    width: 100%;
+    display: flex;
+    margin: 30px 0;
+    text-decoration: none;
+}
+.btn{
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 5px;
+    background: transparent;
+    border-radius: 20px;
+    width: 50%;
+    margin: 0  10px;
+    cursor: pointer;
+    font-size: 16px;
+    outline: none;
+    font-family: Viga;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+.btn:hover{
+   background-color:#FF1493;
+}
+
+::placeholder{
+  padding: 0px;
+}
+
+.primary{
+    border: none;
+    background: linear-gradient(45deg,#D2CCC4 24%, #2F4353 100%);
+}
+
+.user-form .pro{
+    width: 470px;
+}
+
+.user-form .fa-eye{
+    margin: 42px 1px 0px 280px;
+}
+
+@media(max-width: 665px){
+    .photo{
+        display: none;
+    }
+    .user-form{
+        width: 100%;
+        border-radius: 10px;
+    }
+}
+@media screen and (max-width: 990px) and (min-width: 665px){
+    .action-btn{
+        margin: 5px;
+        display: block;
+        width: 95%;
+    }
+    .btn{
+        width: 100%;
+        margin: 5px;
+        padding: 5px;
+
+    }
+}
+
+@media screen and (max-width:320px){
+   
+    .user-form h1{
+        color: ivory;
+        padding:5px 0;
+        font-weight: 700;
+    }
+    .action-btn{
+        width: 180%;
+        display: block;
+        margin: 5px;
+        
+    }
+    .btn{
+        width: 50%;
+        margin: 5px;
+        padding: 5px;
+    }
+}
